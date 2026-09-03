@@ -1,0 +1,4 @@
+import type {Metadata} from "next";
+import "./globals.css";
+export const metadata:Metadata={title:"Steven Gilbert Career Portfolio",description:"Senior Healthcare Business Systems Analyst specializing in healthcare systems, data analytics, business intelligence, claims, Medicaid MMIS/MES, SAS, R, Python, and SQL.",keywords:["Steven Gilbert","Healthcare Business Systems Analyst","Healthcare Analytics","SAS","R","Python","SQL","Power BI","Facets","QNXT","Medicaid MMIS"],openGraph:{title:"Steven Gilbert Career Portfolio",description:"Healthcare systems. Sharper decisions.",type:"website",images:["/og.png"]},twitter:{card:"summary_large_image",title:"Steven Gilbert Career Portfolio",description:"Healthcare systems. Sharper decisions.",images:["/og.png"]},icons:{icon:"/favicon.svg"},other:{"codex-preview":"development"}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
