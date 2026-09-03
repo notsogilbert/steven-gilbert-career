@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Restore script permissions
+        run: chmod +x scripts/*.sh
+
       - name: Build static portfolio
         run: npm run build:pages
 
