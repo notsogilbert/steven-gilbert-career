@@ -1,37 +1,25 @@
-# Steven Gilbert Career Portfolio
+# Publish Steven Gilbert's portfolio with GitHub Pages
 
-A professional portfolio presenting Steven Gilbert's healthcare business systems, medical claims analytics, business intelligence, and root-cause analysis experience.
+This repository includes an automated GitHub Pages deployment. Every update pushed to the `main` branch rebuilds and republishes the portfolio.
 
-## Portfolio highlights
+## First-time setup
 
-- Healthcare claims, payment integrity, provider billing, and code edits
-- Medicaid MMIS/MES, Facets, QNXT, and NetworX
-- Python, SAS, R, SQL, Power BI, Tableau, and Azure Databricks
-- Completed claim-adjudication root-cause analysis project
-- Medicaid and CHIP operational analytics case study
-- Professional insight on responsible AI use by analysts
+1. Create a public GitHub repository named `steven-gilbert-career`.
+2. Upload or push the complete contents of this project to the repository's `main` branch.
+3. Open the repository on GitHub and select **Settings → Pages**.
+4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+5. Open the **Actions** tab and select **Deploy portfolio to GitHub Pages**.
+6. If the workflow has not started automatically, select **Run workflow**.
+7. When deployment finishes, GitHub will display the public portfolio address.
 
-## Local development
+The expected address is:
 
-Requirements: Node.js 22 or newer.
+`https://notsogilbert.github.io/steven-gilbert-career/`
 
-```bash
-npm ci
-npm run dev
-```
+## Future updates
 
-## Production builds
+Edit the source and push the changes to `main`. GitHub Actions will publish the new version automatically.
 
-```bash
-npm run build
-```
+## Optional custom domain
 
-To create the static package used by GitHub Pages:
-
-```bash
-npm run build:pages
-```
-
-The static output is written to `github-pages/`. The GitHub Actions workflow builds and deploys this output automatically whenever the `main` branch changes.
-
-See [GITHUB-PAGES.md](GITHUB-PAGES.md) for first-time publishing instructions.
+After purchasing a domain, enter it under **Settings → Pages → Custom domain** and follow GitHub's DNS instructions. Enable **Enforce HTTPS** when it becomes available.
